@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Openings Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Chess Openings Survey</h1>
+<form action="submit_survey.html" method="get">
+    <label for="reset">Clear Answers:</label>
+    <input type="reset"><br><br>
+
+    <label for="Your_name">Your Name:</label>
+    <input type="text" id="Your_name" name="name" minlength="3" maxlength=20 required><br><br>
+
+    <label>How would you rate your chess experience?</label><br>
+    <input type="radio" id="beginner" name="experience" value="Beginner" required>
+    <label for="beginner">Beginner</label><br>
+    <input type="radio" id="intermediate" name="experience" value="Intermediate">
+    <label for="intermediate">Intermediate</label><br>
+    <input type="radio" id="advanced" name="experience" value="Advanced">
+    <label for="advanced">Advanced</label><br><br>
+
+    <label for="favorite_opening">What is your favorite chess opening?</label><br>
+    <input type="text" id="favorite_opening" name="favorite_opening" required><br><br>
+
+    <label>Which openings do you commonly use? (Select all that apply):</label><br>
+    <input type="checkbox" id="sicilian" name="openings" value="Sicilian Defense">
+    <label for="sicilian">Sicilian Defense</label><br>
+    <input type="checkbox" id="french" name="openings" value="French Defense">
+    <label for="french">French Defense</label><br>
+    <input type="checkbox" id="Ruy Lopez (Spanish)" name="openings" value="Ruy Lopez (Spanish)">
+    <label for="Ruy Lopez (Spanish)">Ruy Lopez (Spanish)</label><br>
+    <input type="checkbox" id="italian" name="openings" value="Italian game">
+    <label for="italian">Italian game</label><br>
+    <input type="checkbox" id="none" name="openings" value="none">
+    <label for="none">None of the above</label><br><br><br>
+
+    <label for="comment">Do you wish to comment anything?</label><br>
+    <textarea id="comment" rows="3" cols="30" maxlength="100"></textarea><br><br>
+
+    <input type="submit" value="Submit Survey">
+</form>
+
+</body>
+</html>
