@@ -1,59 +1,129 @@
-body{
-    background-color: rgb(0, 0, 0);
+html {
+    --background-color: rgb(87, 13, 13);
+    --text-color: white;
+    --link-color: white;
+    --heading-color: rgb(255, 255, 255);
+    --button-bg-color: #555;
+    --button-text-color: white;
+    --border-color: #333;
+    --input-bg-color: #444;
+    --input-text-color: white;
 }
 
-h1{
-    Color : rgb(255, 255, 255)
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
-h2{
 
-    Color : rgb(255, 255, 255)
+h1, h2, h3, h4 {
+    color: var(--heading-color);
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
 
+form, p, ul, li, a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'Open Sans', 'Arial', sans-serif;
 }
-h3{
-    Color : rgb(255, 255, 255)
-}
-h4{
-    Color : rgb(255, 255, 255)
-}
-form{
+
+.white {
     color: white;
 }
 
-p{
-    color: white;
+a {
+    text-decoration: none;
 }
 
-ul{
-    color: white;
-}
-
-li{
-    color: white;
-}
-
-#l1{
+#l1 {
     color: rgb(255, 0, 0);
 }
 
-#l2{
+#l2 {
     color: rgb(255, 123, 0);
 }
 
-#l3{
+#l3 {
     color: rgb(255, 217, 0);
 }
 
-#l4{
+#l4 {
     color: rgb(200, 255, 0);
 }
 
-#l5{
-    color: rgb(81, 255, 0);;
+#l5 {
+    color: rgb(81, 255, 0);
 }
-#l6{
+
+#l6 {
     color: aqua;
 }
-.white{
-    color: white;
+
+.light-theme {
+    --background-color: #b1b1b1;
+    --text-color: black;
+    --link-color: #007bff;
+    --heading-color: #333;
+    --button-bg-color: #007bff;
+    --button-text-color: white;
+    --border-color: #ccc;
+    --input-bg-color: white;
+    --input-text-color: black;
 }
+
+.dark-theme {
+    --background-color: rgb(87, 13, 13);
+    --text-color: white;
+    --link-color: white;
+    --heading-color: rgb(255, 255, 255);
+    --button-bg-color: #555;
+    --button-text-color: white;
+    --border-color: #333;
+    --input-bg-color: #444;
+    --input-text-color: white;
+}
+
+.theme-switcher {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.padding-left {
+    padding-left: 20px;
+}
+
+.theme-switcher {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 1000;
+    max-width: 200px;
+    width: auto;
+    white-space: nowrap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap');

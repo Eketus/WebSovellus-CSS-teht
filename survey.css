@@ -1,0 +1,78 @@
+
+.survey-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #00f7ff;
+    margin-bottom: 30px;
+}
+
+input[type="text"], input[type="radio"], input[type="checkbox"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form > div {
+    margin-bottom: 20px;
+}
+
+.experience-options, .openings-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .survey-form-container {
+        padding: 15px;
+    }
+}
